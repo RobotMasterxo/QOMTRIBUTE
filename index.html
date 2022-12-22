@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>qomTRIBUTE MultiSender</title>
+	<link rel="shortcut icon" type="image/png" href="img\favicon.png"/>
+	<script src="web3.min.js"></script>
+	<script src="jquery.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/plugins.css">
+	<link rel="stylesheet" type="text/css" href="css/theme-styles.css">
+	<link rel="stylesheet" type="text/css" href="css/blocks.css">
+	<link rel="stylesheet" type="text/css" href="css/widgets.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700i,900," rel="stylesheet">
+
+
+	<!--Styles for RTL-->
+
+	<!--<link rel="stylesheet" type="text/css" href="css/rtl.css">-->
+
+
+</head>
+
+<body class="crumina-grid">
+
+<!-- Preloader -->
+
+<!--<div id="hellopreloader">
+	<div class="preloader">
+		<svg width="135" height="140" fill="#fff">
+			<rect width="15" height="120" y="10" rx="6">
+				<animate attributeName="height" begin="0.5s" calcMode="linear" dur="1s" repeatCount="indefinite" values="120;110;100;90;80;70;60;50;40;140;120" />
+				<animate attributeName="y" begin="0.5s" calcMode="linear" dur="1s" repeatCount="indefinite" values="10;15;20;25;30;35;40;45;50;0;10" />
+			</rect>
+			<rect width="15" height="120" x="30" y="10" rx="6">
+				<animate attributeName="height" begin="0.25s" calcMode="linear" dur="1s" repeatCount="indefinite" values="120;110;100;90;80;70;60;50;40;140;120" />
+				<animate attributeName="y" begin="0.25s" calcMode="linear" dur="1s" repeatCount="indefinite" values="10;15;20;25;30;35;40;45;50;0;10" />
+			</rect>
+			<rect width="15" height="140" x="60" rx="6">
+				<animate attributeName="height" begin="0s" calcMode="linear" dur="1s" repeatCount="indefinite" values="120;110;100;90;80;70;60;50;40;140;120" />
+				<animate attributeName="y" begin="0s" calcMode="linear" dur="1s" repeatCount="indefinite" values="10;15;20;25;30;35;40;45;50;0;10" />
+			</rect>
+			<rect width="15" height="120" x="90" y="10" rx="6">
+				<animate attributeName="height" begin="0.25s" calcMode="linear" dur="1s" repeatCount="indefinite" values="120;110;100;90;80;70;60;50;40;140;120" />
+				<animate attributeName="y" begin="0.25s" calcMode="linear" dur="1s" repeatCount="indefinite" values="10;15;20;25;30;35;40;45;50;0;10" />
+			</rect>
+			<rect width="15" height="120" x="120" y="10" rx="6">
+				<animate attributeName="height" begin="0.5s" calcMode="linear" dur="1s" repeatCount="indefinite" values="120;110;100;90;80;70;60;50;40;140;120" />
+				<animate attributeName="y" begin="0.5s" calcMode="linear" dur="1s" repeatCount="indefinite" values="10;15;20;25;30;35;40;45;50;0;10" />
+			</rect>
+		</svg>
+
+		<div class="text">Loading ...</div>
+	</div>
+</div>-->
+
+<!-- ... end Preloader -->
+
+<!-- Header -->
+
+<header class="header" id="site-header">
+	<div class="container">
+		<div class="header-content-wrapper">
+			<a href="index.html" class="site-logo">
+				<img src="img/logo-primary.png" alt="disTRIBUTE">
+				<span class="logo_text">qomTRIBUTE&nbsp;</span>
+				<!-- <img src="img/logo_cryptopinions.png" alt="Cryptopinions"> -->
+			</a>
+
+			<nav id="primary-menu" class="primary-menu">
+
+				<!-- menu-icon-wrapper -->
+
+				<a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
+					<span class="mob-menu--title">Menu</span>
+					<span id="menu-icon-wrapper" class="menu-icon-wrapper">
+						<svg width="1000px" height="1000px">
+							<path id="pathD" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+							<path id="pathE" d="M 300 500 L 700 500"></path>
+							<path id="pathF" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+						</svg>
+					</span>
+				</a>
+
+				<ul class="primary-menu-menu">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+
+					<li>
+						<a href="https://linktr.ee/qomlinks">LinkTree</a>
+					</li>
+
+					<li>
+						<a href="https://www.coingecko.com/en/coins/shiba-predator">Qom Price</a>
+					</li>
+
+
+					
+
+			</nav>
+
+		</div>
+	</div>
+</header>
+
+<!-- ... end Header -->
+
+
+<div class="main-content-wrapper">
+	<section data-settings="particles-1" class="main-section crumina-flying-balls particles-js bg-1 medium-padding120 responsive-align-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+					<img class="responsive-width-50" src="img/eagle-hat.png" alt="image">
+				</div>
+				<div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+					<header class="crumina-module crumina-heading heading--h1 heading--with-decoration">
+						<h1 class="heading-title heading--half-colored f-size-90 weight-normal no-margin">SHARE<br>
+							<span class="weight-bold">QOM NETWORK</span></h1>
+						<h2 class="c-primary weight-bold">TOKENS</h2>
+					</header>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section data-settings="particles-1" class="main-section crumina-flying-balls bg-1 responsive-align-center">
+		<div class="container" id="formContainer">
+					<form class="register-form form--dark" onsubmit="return false;">
+						<header class="crumina-module crumina-heading heading--h2 heading--with-decoration">
+							<h2 class="heading-title heading--half-colored">Share between multiple wallets</h2>
+							<p>* This is Required</p>
+						</header>
+						<div class="form-group label-floating is-empty">
+							<input id="tokenAddress" class="form-control input--squared input--dark" name="name" type="text" placeholder="Token Contract *">
+						</div>
+						<div class="form-group label-floating is-empty spacing">
+							Token Name:
+							<span id="tokenName">?</span>
+						</div>
+						<div class="form-group label-floating is-empty spacing">
+							Your Tokens:
+							<span id="tokenBalance">?</span>
+						</div>
+						<div class="form-group label-floating is-empty spacing">
+							Decimals:
+							<span id="tokenDecimals">?</span>
+						</div>
+						<button id="approveButton" class="btn btn--large btn--green-light btn--with-icon btn--icon-right full-width spacing">
+							Approve Tokens
+							<svg class="woox-icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
+						</button>
+
+
+						<div class="form-group label-floating">
+								<textarea id="relativeShares" name="message" class="form-control input--squared input--dark height-170" placeholder="Enter ETH address and amount of ETH sent per wallet."></textarea>
+						</div>
+						<br>
+				    <div class="spacing">Tokens to share:</div>
+				    <input id="tokenstodistribute" type="number"/>
+				    <br>
+						<button id="distribute" class="btn btn--large btn--primary full-width">Share Tokens</button>
+					</form>
+		</div>
+	</section>
+
+
+	<section>
+		<div class="container">
+
+			<hr class="divider">
+
+			<div class="row medium-padding80">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="tabs tabs--style6">
+						<ul role="tablist">
+							<li role="presentation" class="tab-control active">
+								<a href="#tab-25" role="tab" data-toggle="tab" class="control-item">
+									<h6 class="tab-title">How To Use </h6>
+								</a>
+							</li>
+							<li role="presentation" class="tab-control">
+								<a href="#tab-26" role="tab" data-toggle="tab" class="control-item">
+									<h6 class="tab-title">Example </h6>
+								</a>
+							</li>
+
+						</ul>
+						<div class="tab-content col-xs-12">
+							<div role="tabpanel" class="tab-pane fade active" id="tab-25">
+								<div class="row">
+									<div class="col-xs-12 crumina-module crumina-pricing-table pricing-table--small">
+										<h4 class="tab-content-title">Instructions</h4>
+
+										<p>1. Find the contract address for the token you wish to share between multiple wallets.</p>
+										<p>2. Copy the contract address you are willing to share.</p>
+										<p>3. Click the approve button and fire the transaction and wait for it to confirm.</p>
+										<p>4. Use a new line for each wallet address and its respective amount of WQOM.</p>
+										<p>5. Input the total number of tokens that you are sharing as a collective total in the "Tokens To share" field.</p>
+										<p>6. The qomTRIBUTE dapp will calculate each wallets share of tokens according to the formula: <i>QOM From Wallet/Total QOM Sum</i>.</p>
+										<p>7. Click the SHARE button to start the transaction.</p>
+										<p>8. All tokens should be distributed accordingly once the transaction confirms.</p>
+										<p>9. Check on qomscan to confirm the distribution was successful.</p>
+										<!-- <div class="col-xs-12 align-center mt60 mb30 w-100">
+											<img class="" src="" alt="image" >
+										</div> -->
+									</div>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane fade" id="tab-26">
+								<div class="row">
+									<div class="col-xs-12 crumina-module crumina-pricing-table pricing-table--small">
+										<h4 class="tab-content-title">Example of Adresses being added:</h4>
+										<div class="col-3-responsive-wrapper ">
+										<p><small>0xa188fda88fc313981DEd74C5292B0B59eB9055F8,5</small></p>
+										<p ><small>0xaCF2e7141694098Fc9C4504A96C5AB441CF1b6C8,10</small></p>
+										<p ><small>0x1462A3C67dB4F92B38d7D61c30deF73a517a47AF,1</small></p>
+										<p ><small>0x8d74BA6E98182fb28DAf418849Ba9c720e79d78C,4</small></p>
+
+									</div>
+									<div class="col-xs-12 align-center w-100">
+										<img class="" src="img/eagle-wondering.png" alt="image" width="200px" height="200px">
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+</div>
+
+<!-- Footer -->
+
+<footer id="site-footer" class="footer ">
+
+	<!-- <canvas id="can"></canvas> -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0 col-xs-12">
+				<div class="widget w-info">
+					<a href="index.html" class="site-logo">
+						<img src="img/logo-primary.png" alt="disTRIBUTE">
+						<span class="logo_text">qomTRIBUTE&nbsp;</span>
+					</a>
+					<p>A functional and secure method for sharing QOM tokens in a single transaction on the QOM blockchain.</p>
+				</div>
+
+				<div class="widget w-contacts">
+					<ul class="socials socials--white">
+						<li class="social-item">
+							<a href="#">
+								<i class="fab fa-twitter woox-icon"></i>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0 col-xs-12">
+
+					<span>© All right reserved 2022.</span>
+					<span><a href="index.html">The hawk's eye sees more clearly than the mole's."</a></span>
+
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<a class="back-to-top" href="#">
+		<svg class="woox-icon icon-top-arrow">
+			<use xlink:href="#icon-top-arrow"></use>
+		</svg>
+	</a>
+</footer>
+
+<!-- ... end Footer -->
+<script src="abi.js?v=0.1"></script>
+<script src="interface.js?v=0.1"></script>
+<script src="main.js?v=0.1"></script>
+
+<script src="js/method-assign.js"></script>
+
+<!-- jQuery first, then Other JS.
+
+<script src="js/jquery-3.3.1.js"></script>
+-->
+<script src="js/js-plugins/leaflet.js"></script>
+<script src="js/js-plugins/MarkerClusterGroup.js"></script>
+<script src="js/js-plugins/crum-mega-menu.js"></script>
+<script src="js/js-plugins/waypoints.js"></script>
+<script src="js/js-plugins/jquery-circle-progress.js"></script>
+<script src="js/js-plugins/segment.js"></script>
+<script src="js/js-plugins/bootstrap.js"></script>
+<script src="js/js-plugins/imagesLoaded.js"></script>
+<script src="js/js-plugins/jquery.matchHeight.js"></script>
+<script src="js/js-plugins/jquery-countTo.js"></script>
+<script src="js/js-plugins/Headroom.js"></script>
+<script src="js/js-plugins/jquery.magnific-popup.js"></script>
+<script src="js/js-plugins/popper.min.js"></script>
+<script src="js/js-plugins/particles.js"></script>
+<script src="js/js-plugins/perfect-scrollbar.js"></script>
+<script src="js/js-plugins/jquery.datetimepicker.full.js"></script>
+<script src="js/js-plugins/svgxuse.js"></script>
+<script src="js/js-plugins/select2.js"></script>
+<script src="js/js-plugins/smooth-scroll.js"></script>
+<script src="js/js-plugins/sharer.js"></script>
+<script src="js/js-plugins/isotope.pkgd.min.js"></script>
+<script src="js/js-plugins/ajax-pagination.js"></script>
+<script src="js/js-plugins/swiper.min.js"></script>
+<script src="js/js-plugins/material.min.js"></script>
+<script src="js/js-plugins/orbitlist.js"></script>
+<script src="js/js-plugins/highstock.js"></script>
+<script src="js/js-plugins/bootstrap-datepicker.js"></script>
+<script src="js/js-plugins/TimeCircles.js"></script>
+<script src="js/js-plugins/ion.rangeSlider.js"></script>
+
+<!-- FontAwesome 5.x.x JS -->
+
+<script defer src="fonts/fontawesome-all.js"></script>
+
+<script src="js/main.js"></script>
+
+<!-- SVG icons loader -->
+<script src="js/svg-loader.js"></script>
+<!-- /SVG icons loader -->
+
+</body>
+</html>
