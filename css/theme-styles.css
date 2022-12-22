@@ -2078,17 +2078,17 @@ abbr {
     height: 160px; }
 
 .has-border-arrow:hover .block--with-arrow-bottom-center {
-  background-color: #131519;
+  background-color:#abaeb61a;
   border-color: #afaeac; }
   .has-border-arrow:hover .block--with-arrow-bottom-center:before, .has-border-arrow:hover .block--with-arrow-bottom-center:after {
     border-bottom-color: #afaeac; }
   .has-border-arrow:hover .block--with-arrow-bottom-center.with-bg .block-arrow-down {
-    background-color: #131519;
+    background-color:#abaeb61a;
     border-bottom-color: #afaeac;
     border-left-color: #afaeac; }
 
 .has-border-arrow:hover .block-arrow-down {
-  background-color: #131519;
+  background-color:#abaeb61a;
   border-bottom-color: #afaeac;
   border-left-color: #afaeac; }
 

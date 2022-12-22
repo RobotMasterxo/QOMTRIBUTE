@@ -289,7 +289,7 @@ table > tfoot > tr.danger > th {
 
   & > tbody > tr:hover {
 	td {
-	  background-color: #131519;
+	  background-color:#abaeb61a;
 	  color: $body-font-color;
 	}
   }
@@ -297,7 +297,7 @@ table > tfoot > tr.danger > th {
   & > tbody > tr > td {
     position: relative;
     color: $body-font-color;
-	background-color: #131519;
+	background-color:#abaeb61a;
 
 	&.c-brown {
 	  &:before {
