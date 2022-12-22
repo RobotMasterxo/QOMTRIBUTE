@@ -48,7 +48,7 @@ function setup(){
       if(ntype!='main'){
       //if(ntype!='rinkeby'){
         //alert('please switch to rinkeby in Metamask')
-        alert('please switch to mainnet in Metamask')
+        // alert('please switch to mainnet in Metamask')
       }
     })
 		//window.tokenContract=new web3.eth.Contract(tokenAbi,tokenContractAddress)
